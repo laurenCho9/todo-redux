@@ -4,12 +4,15 @@ import BoardMenu from "./board/BoardMenu";
 import { useSelector } from "react-redux";
 import TodoList from "./todo/TodoList";
 import TodoMenu from "./todo/TodoMenu";
+import AppBar from "./AppBar";
 
 function App() {
   const isBoardSelected = useSelector((state) => !!state.board.selectedBoardId);
 
   return (
     <Wrapper>
+      <AppBar />
+
       <ContentContainer>
         <BoardContainer>
           <BoardList />
