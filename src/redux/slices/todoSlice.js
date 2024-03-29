@@ -56,6 +56,6 @@ export const {
   deleteTodo,
   deleteBoardTodos,
   resetTodo,
-} = todoSlice.acitons;
+} = todoSlice.actions;
 
 export default todoSlice.reducer;
